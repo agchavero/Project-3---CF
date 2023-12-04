@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', sans-serif;
+}
+#home-screen{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../media/images/CFBACKGROUND.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+}
+
+#CFAwareness{
+    padding-top: 7%;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 80vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#what{
+    background-color: rgb(131, 129, 255,0.889);
+    width: 17vw;
+    height: 15vh;
+    border-radius: 10%;
+    position: relative;
+}
+
+#cfinfo{
+    position: absolute;
+    background-color: rgb(131, 129, 255,0.889);
+    bottom: 0%;
+    left: 105%;
+    width: 50vw;
+    height: 15vh;
+    border-radius: 2%;
+}
+
+#how{
+    background-color: rgb(192, 178, 255,0.889);
+    width: 17vw;
+    height: 15vh;
+    border-radius: 10%;
+    position: relative;
+}
+
+#percentage{
+    position: absolute;
+    background-color: rgb(192, 178, 255,0.889);
+    bottom: 0%;
+    left: 105%;
+    width: 50vw;
+    height: 15vh;
+    border-radius: 2%;
+}
+
+#calltoaction{
+    background-color: rgb(238, 219, 255,0.889);
+    width: 17vw;
+    height: 15vh;
+    border-radius: 10%;
+    position: relative;
+}
+
+#website{
+    position: absolute;
+    background-color: rgba(238, 219, 255, 0.889);
+    bottom: 0%;
+    left: 105%;
+    width: 50vw;
+    height: 15vh;
+    border-radius: 2%;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+    padding: 7px;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#what-text{
+    padding: 40px 0;
+}
+#how-text{
+    padding: 25px 0;
+}
+#action-text{
+    padding: 40px 0;
+}
+    
+
+@keyframes slideBox{
+    0%{right: 0%;}
+    100%{right: 32%;}
+}
+
+.animate-slide{
+    animation: slideBox 3s forwards;
+}
+
+
+button{
+    position: relative;
+    bottom: 7px;
+    background-color: rgb(223, 219, 250);
+    width: 10vw;
+    height: 4vh;
+    font-size: .7rem;
+    font-weight: bold;
+    color: rgb(74, 51, 193);
+    border-radius: 2%;
+}
+
+
+
+#welcomescreen{
+    background-image: linear-gradient(white,rgb(62, 39, 178, 0.941));
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+#breatheez{
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+    top: 35%;
+    text-align: center;
+    animation: breathe 3s ease-in-out infinite;
+}
+
+#breathe-text{
+    padding-top: 11vh;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(62, 39, 178);
+}
+
+@keyframes breathe{
+    0%{scale: 1;}
+    50%{scale: 1.5;}
+    100%{scale:1;}
+}
+
+/* .animate-breathe{
+    animation: breathe 3s infinite;
+} */
