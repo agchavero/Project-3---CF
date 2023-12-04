@@ -5,21 +5,28 @@
     padding: 0;
     font-family: 'Poiret One', sans-serif;
 }
+
+
+
+
 #home-screen{
 
     width: 100vw;
     height: 100vh;
-    background-image: url(../media/images/CFBACKGROUND.png);
+    background-image: url(../media/images/purplebackground.png);
     background-position: center;
     background-size: cover;
     text-align: center;
     align-items: center;
 }
 
+
+
 #CFAwareness{
     padding-top: 7%;
     color: white;
     font-size: 3.5rem;
+    animation: static 3s infinite;
 }
 
 .flex-container{
@@ -80,7 +87,7 @@
 
 #website{
     position: absolute;
-    background-color: rgba(238, 219, 255, 0.889);
+    background-color: rgba(238, 219, 255,0.889);
     bottom: 0%;
     left: 105%;
     width: 50vw;
@@ -94,7 +101,8 @@ h2{
 
 h3{
     color: white;
-    padding: 7px;
+    padding-top: 6px;
+    padding-bottom: 7px;
     font-size: 1.1rem;
     text-align: justify;
     padding-left: 20px;
@@ -126,15 +134,22 @@ button{
     position: relative;
     bottom: 7px;
     background-color: rgb(223, 219, 250);
-    width: 10vw;
+    width: 11vw;
     height: 4vh;
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: bold;
     color: rgb(74, 51, 193);
     border-radius: 2%;
 }
 
-
+#lungs{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100vw;
+    height: 100vh;
+    animation: breathe2 5s ease-in-out infinite;
+}
 
 #welcomescreen{
     background-image: linear-gradient(white,rgb(62, 39, 178, 0.941));
@@ -153,7 +168,7 @@ button{
     margin-right: auto;
     top: 35%;
     text-align: center;
-    animation: breathe 3s ease-in-out infinite;
+    animation: breathe 5s ease-in-out infinite;
 }
 
 #breathe-text{
@@ -162,6 +177,13 @@ button{
     font-size: 2rem;
     color: rgb(62, 39, 178);
 }
+#lungs2{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100vw;
+    height: 100vh;
+}
 
 @keyframes breathe{
     0%{scale: 1;}
@@ -169,6 +191,13 @@ button{
     100%{scale:1;}
 }
 
-/* .animate-breathe{
-    animation: breathe 3s infinite;
-} */
+@keyframes breathe2{
+    0%{scale: 1;}
+    50%{scale: 1.1;}
+    100%{scale: 1;}
+}
+
+@keyframes static{
+    0%{scale: 1;}
+    100%{scale: 1;}
+}

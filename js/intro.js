@@ -20,7 +20,6 @@ $("#CFAwareness").click(function(){
 });
 
 
-
 $("#what").click(function(){
 
     $("#what").toggleClass("animate-slide");
